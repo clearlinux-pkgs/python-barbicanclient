@@ -4,7 +4,7 @@
 #
 Name     : python-barbicanclient
 Version  : 3.0.3
-Release  : 13
+Release  : 14
 URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-3.0.3.tar.gz
 Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-3.0.3.tar.gz
 Summary  : Client Library for OpenStack Barbican Key Management API
