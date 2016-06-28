@@ -4,7 +4,7 @@
 #
 Name     : python-barbicanclient
 Version  : 4.0.1
-Release  : 21
+Release  : 22
 URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.0.1.tar.gz
 Summary  : Client Library for OpenStack Barbican Key Management API
