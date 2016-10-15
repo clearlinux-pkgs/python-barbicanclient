@@ -1,16 +1,29 @@
 CHANGES
 =======
 
-4.0.1
+4.1.0
 -----
 
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Fix jenkins failing on coverage report
+* Fixed python-barbicanclient functional tests
+* Updated from global requirements
+* Remove unused import
+* Updated from global requirements
+* Update mailmap for Douglas Mendizábal
+* Update the home-page with developer documentation link
+* Issue deprecation message for the barbican CLI
+* Fixed python-barbicanclient functional tests
+* Censoring secrets payload value from debug log
+* Fix argument order for assertEqual to (exp, obs)
+* Fixed barbican client order list
+* Display error description
+* Updated from global requirements
 
 4.0.0
 -----
 
-* Replace assertEqual(None, *
+* Replace assertEqual(None, *) with assertIsNone in tests
 * Updated from global requirements
 * Use six.moves.urllib.parse to replace urlparse
 * Updated from global requirements
@@ -19,12 +32,14 @@ CHANGES
 * Updated from global requirements
 * Replace deprecated keystoneclient...exceptions
 * Update typos
+* Remove unused import logging
 * Removes MANIFEST.in as it is not needed explicitely by PBR
 * Deprecated tox -downloadcache option removed
 * Remove py26 support
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
+* Make Client test documentation similar to Barbican
 * Updated from global requirements
 * Update Readme to include new/updated CLI commands
 * Allow tox to be able to run independent functional tests
@@ -281,10 +296,6 @@ CHANGES
 * Add filtering CLI options to 'secrets list' sub command
 * secrets.get should verify that the request is for a single secret
 * Add .gitreview file for StackForge
-
-v1.0.0
-------
-
 * Version bump for Icehouse M1
 * Add mailmap file
 * Remove extra header (H2) in the readme
@@ -303,10 +314,6 @@ v1.0.0
 * Fixed typo in keep Client initialization
 * Version bump
 * Fix a couple of bugs caused by typos
-
-v0.4.0
-------
-
 * Version bump
 * Remove unused exception
 * Update unit tests for Client
@@ -320,7 +327,7 @@ v0.4.0
 * Raise exceptions for error responses from the server
 * Update README.md
 * Clean up imports and update requirements
-* Add store command to keep. Rename options to match other openstack clients
+* Add store command to keep.  Rename options to match other openstack clients
 * Update keep to use refactored client
 * Client.py cleanup
 * Moved order crud to order manager
