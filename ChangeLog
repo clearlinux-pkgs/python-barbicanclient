@@ -1,11 +1,49 @@
 CHANGES
 =======
 
+4.2.0
+-----
+
+* Updated from global requirements
+* Skip order with 'None' payload content type
+* Remove invalid smoke test that is failing in the gate
+* Updated from global requirements
+* Remove discover from test-requirements
+* Accept 'pass_phrase' for AsymmetricOrder constructor
+* Updated from global requirements
+* Add missing param to certificate order initialization
+* Fix error in doc
+* Removed openstack/common from tox.in
+* Updated from global requirements
+* Updated from global requirements
+* Add Python 3.5 classifier and venv
+* Updated from global requirements
+* Use keystoneauth
+* Fix bug when uploading secret using unified CLI
+* Fix order of arguments in assertEqual
+* Add plug-in summary for osc doc
+* Support upper-constraints in tox.ini
+* Updated from global requirements
+* Use 'code-block' for pieces of code
+* Remove redundant space in docstring
+* Using assertTrue/False() instead of assertEqual(True/False)
+* Using assertEqual instead of assertEquals
+* Remove imported but unused
+* Add oslo.config to requirements
+* Handle container list command correctly
+* Fix CLI message in CA module
+* Replaced bare except
+* Cast sets to lists in acl functional tests
+* Validate key order meta fields
+* Use international logging message
+
 4.1.0
 -----
 
 * Updated from global requirements
 * Fix jenkins failing on coverage report
+* Do not write except:, use except Exception instead
+* Fix argument order for assertEqual to (expected, observed)
 * Fixed python-barbicanclient functional tests
 * Updated from global requirements
 * Remove unused import
@@ -33,6 +71,7 @@ CHANGES
 * Replace deprecated keystoneclient...exceptions
 * Update typos
 * Remove unused import logging
+* Update Order Create Type Help Dialog
 * Removes MANIFEST.in as it is not needed explicitely by PBR
 * Deprecated tox -downloadcache option removed
 * Remove py26 support
