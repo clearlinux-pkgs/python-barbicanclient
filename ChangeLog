@@ -1,14 +1,43 @@
 CHANGES
 =======
 
-4.5.3
+4.7.0
 -----
 
+* Switch to stestr
+* fix tox python3 overrides
+* use open() instead of file()
+* Remove PyPI downloads
+* Add --file flag for secrets
+* Update the bugs link address
+* Trivial: Update pypi url to new url
+* add lower-constraints job
+* Updated from global requirements
+* pypy is not checked at gate
+* Follow the new PTI for document build
+* Supress client debug messages
+* Update the old http links in docs
+* Updating time for functional tests
+* Update doc to use the correct order method
+
+4.6.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
 * Pass OSC interface through to barbican plugin
+* Fix some reST field lists in docstrings
+* Updated from global requirements
+* Avoid tox\_install.sh for constraints support
+* Switch to use new barbican endpoint
+* Updated from global requirements
+* Add 'rm -f .testrepository/times.dbm' command in testenv
 * Updated from global requirements
 * Updated from global requirements
-* Update UPPER\_CONSTRAINTS\_FILE for stable/pike
-* Update .gitreview for stable/pike
+* Correct docs usage of keystoneauth1 session
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
 
 4.5.2
 -----
@@ -412,6 +441,10 @@ CHANGES
 * Add filtering CLI options to 'secrets list' sub command
 * secrets.get should verify that the request is for a single secret
 * Add .gitreview file for StackForge
+
+v1.0.0
+------
+
 * Version bump for Icehouse M1
 * Add mailmap file
 * Remove extra header (H2) in the readme
@@ -430,6 +463,10 @@ CHANGES
 * Fixed typo in keep Client initialization
 * Version bump
 * Fix a couple of bugs caused by typos
+
+v0.4.0
+------
+
 * Version bump
 * Remove unused exception
 * Update unit tests for Client

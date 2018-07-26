@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC36CDCB4DF00C68C (infra-root@openstack.org)
 #
 Name     : python-barbicanclient
-Version  : 4.5.3
-Release  : 32
-URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.5.3.tar.gz
-Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.5.3.tar.gz
-Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.5.3.tar.gz.asc
+Version  : 4.7.0
+Release  : 33
+URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz
+Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz
+Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz.asc
 Summary  : Client Library for OpenStack Barbican Key Management API
 Group    : Development/Tools
 License  : Apache-2.0
@@ -17,8 +17,10 @@ Requires: python-barbicanclient-bin
 Requires: python-barbicanclient-python3
 Requires: python-barbicanclient-license
 Requires: python-barbicanclient-python
+Requires: Sphinx
 Requires: cliff
 Requires: keystoneauth1
+Requires: openstackdocstheme
 Requires: oslo.i18n
 Requires: oslo.serialization
 Requires: oslo.utils
@@ -70,14 +72,14 @@ python3 components for the python-barbicanclient package.
 
 
 %prep
-%setup -q -n python-barbicanclient-4.5.3
+%setup -q -n python-barbicanclient-4.7.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532380797
+export SOURCE_DATE_EPOCH=1532621861
 python3 setup.py build -b py3
 
 %install
