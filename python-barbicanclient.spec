@@ -6,17 +6,17 @@
 #
 Name     : python-barbicanclient
 Version  : 4.7.0
-Release  : 33
+Release  : 34
 URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.7.0.tar.gz.asc
 Summary  : Client Library for OpenStack Barbican Key Management API
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: python-barbicanclient-bin
-Requires: python-barbicanclient-python3
-Requires: python-barbicanclient-license
-Requires: python-barbicanclient-python
+Requires: python-barbicanclient-bin = %{version}-%{release}
+Requires: python-barbicanclient-license = %{version}-%{release}
+Requires: python-barbicanclient-python = %{version}-%{release}
+Requires: python-barbicanclient-python3 = %{version}-%{release}
 Requires: Sphinx
 Requires: cliff
 Requires: keystoneauth1
@@ -29,9 +29,6 @@ Requires: requests
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
-BuildRequires : pip
-BuildRequires : python3-dev
-BuildRequires : setuptools
 
 %description
 =====================
@@ -39,7 +36,7 @@ BuildRequires : setuptools
 %package bin
 Summary: bin components for the python-barbicanclient package.
 Group: Binaries
-Requires: python-barbicanclient-license
+Requires: python-barbicanclient-license = %{version}-%{release}
 
 %description bin
 bin components for the python-barbicanclient package.
@@ -56,7 +53,7 @@ license components for the python-barbicanclient package.
 %package python
 Summary: python components for the python-barbicanclient package.
 Group: Default
-Requires: python-barbicanclient-python3
+Requires: python-barbicanclient-python3 = %{version}-%{release}
 
 %description python
 python components for the python-barbicanclient package.
@@ -79,14 +76,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532621861
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541271878
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/python-barbicanclient
-cp LICENSE %{buildroot}/usr/share/doc/python-barbicanclient/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/python-barbicanclient
+cp LICENSE %{buildroot}/usr/share/package-licenses/python-barbicanclient/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -99,8 +96,8 @@ echo ----[ mark ]----
 /usr/bin/barbican
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/python-barbicanclient/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/python-barbicanclient/LICENSE
 
 %files python
 %defattr(-,root,root,-)
