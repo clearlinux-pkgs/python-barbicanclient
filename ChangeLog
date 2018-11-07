@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+4.8.0
+-----
+
+* Don't quote {posargs} in tox.ini
+* Allow fetching by UUID, and respect interface
+* Import python-barbicanclient-dsvm
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+
 4.7.0
 -----
 
