@@ -5,12 +5,12 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : python-barbicanclient
-Version  : 4.8.0
-Release  : 36
-URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.0.tar.gz
-Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.0.tar.gz.asc
-Summary  : Client Library for OpenStack Barbican Key Management API
+Version  : 4.8.1
+Release  : 37
+URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
+Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
+Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz.asc
+Summary  : Client library for the Barbican Key Management API
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-barbicanclient-bin = %{version}-%{release}
@@ -31,7 +31,11 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+python-barbicanclient
 =====================
+.. image:: https://img.shields.io/pypi/v/python-barbicanclient.svg
+:target: https://pypi.org/project/python-barbicanclient/
+:alt: Latest Version
 
 %package bin
 Summary: bin components for the python-barbicanclient package.
@@ -69,14 +73,15 @@ python3 components for the python-barbicanclient package.
 
 
 %prep
-%setup -q -n python-barbicanclient-4.8.0
+%setup -q -n python-barbicanclient-4.8.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541605366
+export SOURCE_DATE_EPOCH=1548276031
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install

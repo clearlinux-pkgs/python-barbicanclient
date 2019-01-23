@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+4.8.1
+-----
+
+* Update hacking version
+* Secret payload should also be fetched by UUID
+* Use template for lower-constraints
+* Update mailinglist from dev to discuss
+* Change openstack-dev to openstack-discuss
+* Add Python 3.6 classifier to setup.cfg
+* add python 3.6 unit test job
+* Update min tox version to 2.0
+
 4.8.0
 -----
 
