@@ -6,7 +6,7 @@
 #
 Name     : python-barbicanclient
 Version  : 4.8.1
-Release  : 37
+Release  : 38
 URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
 Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
 Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz.asc
@@ -17,10 +17,8 @@ Requires: python-barbicanclient-bin = %{version}-%{release}
 Requires: python-barbicanclient-license = %{version}-%{release}
 Requires: python-barbicanclient-python = %{version}-%{release}
 Requires: python-barbicanclient-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: cliff
 Requires: keystoneauth1
-Requires: openstackdocstheme
 Requires: oslo.i18n
 Requires: oslo.serialization
 Requires: oslo.utils
@@ -80,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548276031
+export SOURCE_DATE_EPOCH=1551030034
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
