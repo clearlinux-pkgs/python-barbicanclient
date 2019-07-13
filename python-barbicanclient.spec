@@ -6,7 +6,7 @@
 #
 Name     : python-barbicanclient
 Version  : 4.8.1
-Release  : 39
+Release  : 40
 URL      : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
 Source0  : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz
 Source99 : http://tarballs.openstack.org/python-barbicanclient/python-barbicanclient-4.8.1.tar.gz.asc
