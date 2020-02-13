@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+4.10.0
+------
+
+* Support two-way auth for barbicanclient
+* PDF Documentation Build tox target
+* docs: Turn on warning-as-error
+* Fix lower-constraints tox target
+* Bump the openstackdocstheme extension to 1.20
+
 4.9.0
 -----
 
