@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+5.0.0
+-----
+
+* Switch to newer openstackdocstheme and reno versions
+* Use unittest.mock instead of third party mock
+* [ussuri][goal] Drop python 2.7 support and testing
+* Fix gate job failures and py3 compatibility
+
 4.10.0
 ------
 
