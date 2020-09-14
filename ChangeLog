@@ -1,9 +1,17 @@
 CHANGES
 =======
 
+5.0.1
+-----
+
+* Zuul: port to native v3 job and add victoria unit tests
+* add py38 package metadata
+* Switch from unittest2 compat methods to Python 3.x methods
+
 5.0.0
 -----
 
+* Update hacking for Python3
 * Switch to newer openstackdocstheme and reno versions
 * Use unittest.mock instead of third party mock
 * [ussuri][goal] Drop python 2.7 support and testing
